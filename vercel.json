@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "corepack enable && corepack prepare pnpm@9.15.9 --activate && pnpm install && pnpm --filter @barge/web build",
+  "outputDirectory": "apps/web/dist",
+  "installCommand": "echo skip-default-install",
+  "framework": null,
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@barge/shared",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Shared types and Zod schemas between apps/web and apps/agent. Stub until the first slice that needs cross-app contracts.",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "echo '@barge/shared: nothing to build yet' && exit 0",
+    "test": "echo '@barge/shared: no tests yet' && exit 0",
+    "lint": "echo '@barge/shared: nothing to lint yet' && exit 0"
+  }
+}

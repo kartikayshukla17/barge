@@ -1,0 +1,21 @@
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #05070a;
+  color: #e4e9f0;
+  font-family: "IBM Plex Mono", "SF Mono", "JetBrains Mono", ui-monospace,
+    monospace;
+}
+
+#root {
+  min-height: 100vh;
+}
