@@ -1,0 +1,46 @@
+.call-control {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  border: 1px solid #1c2531;
+  border-radius: 4px;
+  background: #0a0e14;
+}
+
+.call-control__row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.call-control__mic {
+  font-size: 1.5rem;
+  line-height: 1;
+  opacity: 0.6;
+}
+
+.call-control__status {
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #9aa6b6;
+}
+
+.call-control__button {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 4px;
+  border: 1px solid #4ee1a0;
+  background: transparent;
+  color: #4ee1a0;
+  cursor: pointer;
+}
+
+.call-control__button:disabled {
+  border-color: #2a3444;
+  color: #5a6475;
+  cursor: not-allowed;
+}

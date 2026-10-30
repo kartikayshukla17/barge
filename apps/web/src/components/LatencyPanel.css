@@ -1,0 +1,31 @@
+.latency-panel {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  border: 1px solid #1c2531;
+  border-radius: 4px;
+  background: #0a0e14;
+}
+
+.latency-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.latency-metric__label {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6b7686;
+}
+
+.latency-metric__value {
+  font-family: "IBM Plex Mono", "SF Mono", "JetBrains Mono", ui-monospace,
+    monospace;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #4ee1a0;
+  font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,28 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 1.5rem;
+}
+
+.home__header {
+  text-align: center;
+}
+
+.home__title {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6b7686;
+}
+
+.home__panels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+}
