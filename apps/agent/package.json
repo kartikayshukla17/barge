@@ -2,11 +2,29 @@
   "name": "@barge/agent",
   "private": true,
   "version": "0.0.0",
-  "description": "Node backend agent runtime (LiveKit participant, STT/LLM/TTS orchestration). Stub until Slice 1 — blocked on LiveKit Cloud + Render credentials.",
+  "type": "module",
+  "description": "Node backend agent runtime (LiveKit participant, STT/LLM/TTS orchestration). Slice 1: HTTP service for minting LiveKit room tokens and spawning the echo participant.",
   "scripts": {
-    "build": "echo 'apps/agent: nothing to build yet (Slice 1+)' && exit 0",
-    "dev": "echo 'apps/agent: not implemented yet (Slice 1+)' && exit 0",
-    "test": "echo 'apps/agent: no tests yet (Slice 1+)' && exit 0",
-    "lint": "echo 'apps/agent: nothing to lint yet (Slice 1+)' && exit 0"
+    "build": "tsc -b",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "lint": "tsc -b --noEmit"
+  },
+  "dependencies": {
+    "@barge/shared": "workspace:*",
+    "@livekit/rtc-node": "1.2.1",
+    "express": "5.3.0",
+    "livekit-server-sdk": "2.19.2",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5",
+    "@types/node": "^22",
+    "@types/supertest": "^6",
+    "supertest": "7.3.1",
+    "tsx": "^4",
+    "typescript": "5.9.3",
+    "vitest": "5.0.5"
   }
 }

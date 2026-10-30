@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: barge-agent
+    runtime: node
+    plan: free
+    rootDir: apps/agent
+    buildCommand: corepack enable && corepack prepare pnpm@9.15.9 --activate && pnpm install && pnpm --filter @barge/agent build
+    startCommand: pnpm --filter @barge/agent start
+    healthCheckPath: /health
+    envVars:
+      - key: LIVEKIT_URL
+        sync: false
+      - key: LIVEKIT_API_KEY
+        sync: false
+      - key: LIVEKIT_API_SECRET
+        sync: false
