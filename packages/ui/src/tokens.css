@@ -1,0 +1,61 @@
+/**
+ * "Trace" design tokens — the locked visual direction for every UI surface
+ * in Barge (GitHub issue #12). Do not add ad hoc colors/fonts outside this
+ * file; every component consumes these custom properties.
+ */
+:root {
+  /* Ground/background */
+  --bg: #09090b;
+  --fg: #fafafa;
+
+  /* Surface elevations */
+  --s0: #0d0d0f;
+  --fg-2: #a1a1aa;
+  --s1: #121214;
+  --fg-3: #71717a;
+  --s2: #171719;
+  --fg-4: #52525b;
+
+  /* Borders */
+  --line: #232327;
+  --line-2: #2c2c31;
+
+  /* Stage colors — deliberately separate from the semantic triad so a
+     stage color never reads as a status. */
+  --stage-net: #6b7a8f;
+  --stage-stt: #4ecde6;
+  --stage-llm: #a78bfa;
+  --stage-tts: #f472b6;
+
+  /* Semantic */
+  --ok: #4ade80;
+  --warn: #fbbf24;
+  --bad: #f87171;
+
+  /* Primary action (buttons like "End call") */
+  --primary-bg: var(--fg);
+  --primary-fg: var(--bg);
+
+  /* Type */
+  --font-ui: "Schibsted Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-ui);
+}
+
+.font-mono,
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,27 @@
+.stage-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  line-height: 1.4;
+  text-transform: lowercase;
+  color: var(--bg);
+}
+
+.stage-tag--net {
+  background: var(--stage-net);
+}
+
+.stage-tag--stt {
+  background: var(--stage-stt);
+}
+
+.stage-tag--llm {
+  background: var(--stage-llm);
+}
+
+.stage-tag--tts {
+  background: var(--stage-tts);
+}
